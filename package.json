@@ -1,11 +1,32 @@
 {
   "name": "auto-test",
+  "private": "true",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "przemuh <przemuh@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/przemuh/auto-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/przemuh/auto-test/issues"
+  },
+  "homepage": "https://github.com/przemuh/auto-test#readme",
+  "description": "",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "auto": "^10.31.0"
+  },
+  "auto": {
+    "plugins": [
+      "npm"
+    ],
+    "onlyPublishWithReleaseLabel": true
+  }
 }
