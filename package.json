@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "przemuh <przemuh@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -16,5 +16,17 @@
     "url": "https://github.com/przemuh/auto-test/issues"
   },
   "homepage": "https://github.com/przemuh/auto-test#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "auto": "^10.31.0"
+  },
+  "auto": {
+    "plugins": [
+      "npm"
+    ],
+    "onlyPublishWithReleaseLabel": true
+  }
 }
