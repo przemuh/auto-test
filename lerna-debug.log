@@ -1,0 +1,41 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/Users/przemuh/Workspace/auto-test/node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/przemuh/Workspace/auto-test
+3 info current version 0.0.0
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch main
+8 silly remoteBranchExists
+9 silly isBehindUpstream
+10 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
+11 silly hasTags
+12 verbose hasTags true
+13 silly git-describe.sync "f03a2e6" => {"refCount":"6","sha":"f03a2e6","isDirty":false}
+14 info Assuming all packages changed
+15 verbose updated @przemuh/a
+16 verbose updated @przemuh/b
+17 verbose git-describe undefined => "f03a2e6"
+18 silly git-describe parsed => {"refCount":"6","sha":"f03a2e6","isDirty":false}
+19 info execute Skipping releases
+20 silly lifecycle No script for "preversion" in "auto-test", continuing
+21 silly lifecycle No script for "preversion" in "@przemuh/a", continuing
+22 silly lifecycle No script for "preversion" in "@przemuh/b", continuing
+23 silly lifecycle No script for "version" in "@przemuh/b", continuing
+24 silly lifecycle No script for "version" in "@przemuh/a", continuing
+25 silly lifecycle No script for "version" in "auto-test", continuing
+26 silly gitAdd [ 'packages/b/package.json', 'packages/a/package.json', 'lerna.json' ]
+27 silly gitCommit v1.0.0
+28 verbose git [ 'commit', '-m', 'v1.0.0' ]
+29 silly gitTag v1.0.0
+30 verbose git [ 'tag', 'v1.0.0', '-m', 'v1.0.0' ]
+31 error Error: Command failed with exit code 128: git tag v1.0.0 -m v1.0.0
+31 error fatal: tag 'v1.0.0' already exists
+31 error     at makeError (/Users/przemuh/Workspace/auto-test/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:60:11)
+31 error     at handlePromise (/Users/przemuh/Workspace/auto-test/node_modules/@lerna/child-process/node_modules/execa/index.js:118:26)
+31 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+31 error     at async Promise.all (index 0)
