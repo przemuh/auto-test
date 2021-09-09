@@ -1,0 +1,10 @@
+# (Thu Sep 09 2021)
+
+#### 🚀 Enhancement
+
+- `@przemuh/a`, `@przemuh/b`
+  - B11 [#1](https://github.com/przemuh/auto-test/pull/1) ([@przemuh](https://github.com/przemuh))
+
+#### Authors: 1
+
+- Przemek ([@przemuh](https://github.com/przemuh))
